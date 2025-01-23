@@ -4,6 +4,7 @@ class Player{
     private:
     string name;
     int id;
+    bool chaal = false;
     public:
     Player(string name,int id)
     {
@@ -13,5 +14,13 @@ class Player{
     string getName()
     {
         return name;
+    }
+    void setChaal()
+    {
+        chaal = true;
+    }
+    bool getChaal()
+    {
+        return chaal;
     }
 };
